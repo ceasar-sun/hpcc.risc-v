@@ -21,7 +21,7 @@
 - [Matrix 矩陣運算](#matrix-矩陣運算)
 
 ### 三、Lab:Fortran
-- [OpenMPI](#openmpi-f90)
+- [OpenMPI](#openmp-f90)
 - [MPI](#mpi-f90)
 
 ---
@@ -72,10 +72,10 @@ Base OS → Scheduler + Compiler + HPC Library → Labs
 ## 三、Lab:C++
 以下為採用 C 語言之程式實做
 
-### OpenMP:C
+### OpenMP (C)
 C 實做 OpenMP 與測試
 
-### MPI:C
+### MPI (C)
 C 實做 OpenMPI 與測試
 
 ### Slurm
@@ -87,8 +87,8 @@ C 實做 OpenMPI 與測試
 ## 三、Lab:Fortran
 以下為採用 Fortran 語言之程式實做
 
-### OpenMP (Fortran) {#openmp-f90}
+### OpenMP (F90)
 Fortran 實做 OpenMP 與測試
 
-### MPI(F90)
+### MPI (F90)
 Fortran 實做 OpenMPI 與測試
