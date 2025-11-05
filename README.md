@@ -10,19 +10,19 @@
 - [元件補述](#-元件補述)
 
 ### 二、系統建置
-- [Base OS](#-base_os)
-- [Scheduler](#-Scheduler)
-- [Complier](#-Complier)
+- [Base OS](#base_os)
+- [Scheduler](#scheduler)
+- [Compiler](#compiler)
 
 ### 三、Lab:C++
-- [OpenMPI](#-OpenMPI_C)
-- [MPI](#-MPI_C)
-- [Slurm](#-Slurm)
-- [Matrix 矩陣運算](#-Matrix_C)
+- [OpenMPI](#openmp-c)
+- [MPI](#mpi_c)
+- [Slurm](#slurm)
+- [Matrix 矩陣運算](#matrix_c)
 
 ### 三、Lab:Fortran
-- [OpenMPI](#-OpenMPI_F90)
-- [MPI](#-MPI_F90)
+- [OpenMPI](#openmpi_f90)
+- [MPI](#mpi_f90)
 
 ---
 
@@ -56,7 +56,7 @@ Base OS → Scheduler + Compiler + HPC Library → Labs
 ---
 
 ## 📖 元件補述
-### [note/openmpi-openmd.md](OpenMP V.S. OpenMPI)
+### **[ 📖 OpenMP v.s. OpenMPI](./note/openmpi-openmd.md)
 
 # 二、系統建置
 
@@ -66,29 +66,29 @@ Base OS → Scheduler + Compiler + HPC Library → Labs
 ### Scheduler
 說明本實做之計算排程器之安裝與設定
 
-### Complier
+### Compiler
 說明本實做之編譯器與對應之函式庫安裝與設定
 
 ## 三、Lab:C++
 以下為採用 C 語言之程式實做
 
-### OpenMPI:C
+### OpenMP:C {#openmp-c}
 C 實做 OpenMP 與測試
 
-### MPI:C (#-MPI_C)
-C 實做 OpenMPi 與測試
+### MPI:C {#mpi_c}
+C 實做 OpenMPI 與測試
 
-### Slurm (#-Slurm)
+### Slurm
 使用環境 Slurm (srun/sbatch) 進行 OpenMP/OpenMPI 測試
 
-### Matrix 矩陣運算 (#-Matrix_C)
+### Matrix 矩陣運算 {#matrix_c}
 以 C 實做矩陣生成與乘法運算，驗證多核多緒之分散式計算可行性
 
 ## 三、Lab:Fortran
 以下為採用 Fortran 語言之程式實做
 
-### OpenMPI (#-OpenMPI_F90)
+### OpenMP {#openmp_f90}
 Fortran 實做 OpenMP 與測試
 
-### MPI (#-MPI_F90)
+### MPI {#mpi_f90}
 Fortran 實做 OpenMPI 與測試
