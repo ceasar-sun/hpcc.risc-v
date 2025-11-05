@@ -10,7 +10,7 @@
 - [元件補述](#-元件補述)
 
 ### 二、系統建置
-- [Base_OS](#-Base_OS)
+- [Base OS](#-base_os)
 - [Scheduler](#-Scheduler)
 - [Complier](#-Complier)
 
@@ -60,7 +60,7 @@ Base OS → Scheduler + Compiler + HPC Library → Labs
 
 # 二、系統建置
 
-### Base_OS
+### Base OS
 說明 OS 基礎環境與所需套件、網路配置、設定
 
 ### Scheduler
