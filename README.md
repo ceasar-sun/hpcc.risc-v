@@ -1,4 +1,5 @@
-# RISC-V64 Base HPC Clsuter 建置
+# Building an HPC Cluster Based on RISC-V64
+# 基於 RISC-V64 的 HPC Cluster 建置
 
 以 RISC-V 64 架構硬體（DC ROMA L2A）之叢集計算環境(HPC)建置，包含 Scheduler、多核心/多執行緒之分散式計算建置與實做紀錄。
 
@@ -33,15 +34,32 @@
 本框架旨在使用 RISC-V64 架構硬體，進行叢集環境計算需求之環境建置，並透過實例進行驗證多核/多緒之於 RISC-V 分散式計算之可行性。
 
 - **硬體**：
- - 🎯 DC-ROMA RISC-V LAPTOP II : https://deepcomputing.io/product/dc-roma-risc-v-laptop-ii/
- - HiFive Premier P550 : https://www.sifive.com/boards/hifive-premier-p550
+  - [DC-ROMA RISC-V LAPTOP II](https://deepcomputing.io/product/dc-roma-risc-v-laptop-ii/)
+  - [HiFive Premier P550](https://www.sifive.com/boards/hifive-premier-p550)
 
-* 環境建置流程示意
+* **建置流程**
 ```
-Base OS → Scheduler + Compiler + HPC Library → Labs
-...
+Base OS 環境設置 → Scheduler + Compiler + HPC Library → Labs
 ```
 
+
+```mermaid
+flowchart TD
+    %% ── 主流程（上下排列） ───────────────────────
+    A[Base OS 環境設置] --> horiz
+    A                  --> B.2[Compiler]
+    B.1 --> horiz
+    B --> C2[Lab]
+    C2 --> E[E] --> C3
+    C2 --> C3
+    C3 --> F[F]
+
+    %% ── 子圖：C.1 → D → G（橫向） ───────────────
+    subgraph horiz [Scheduler ]
+        %% direction LR
+        B.1[Slurm] --> D[Slurm]
+    end
+```
 ---
 
 ## 🛠️ 環境需求
@@ -56,7 +74,7 @@ Base OS → Scheduler + Compiler + HPC Library → Labs
 ---
 
 ## 📖 元件補述
-### **[ 📖 OpenMP v.s. OpenMPI](./note/openmpi-openmd.md)
+### **[ 📖 OpenMP v.s. OpenMPI](./note/openmpi-openmd.md)**
 
 # 二、系統建置
 
